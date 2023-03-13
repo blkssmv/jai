@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app{
+    background: #EEEEEE;
+}
+.container{
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 1670px;
+}
+
+.header{
+    background-color: #FFFFFF;
+    padding: 14px 16px 8px 16px;
+}
+.header_item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fixed_header {
+    width: 100%;
+    table-layout: fixed;
+    overflow: auto;
+    border-collapse: collapse;
+}
+.fixed_header tbody {
+    overflow: auto;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fixed_header thead tr,
+.fixed_header tbody tr {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.fixed_header thead {
+    background: #F3F3F3;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 120%;
+    color: #808080;
+}
+
+.fixed_header th,
+.fixed_header td{
+    text-align: left;
+    width: 100%;
+}
+.fixed_header th{
+    padding: 17px 16px;
+}
+
+.fixed_header td {
+    padding: 15.5px 10px 15.5px 16px;
+}
+.fixed_header tbody tr{
+    background-color: #F9FAFA;
+}
+.fixed_header tbody tr:nth-child(2n+1){
+    background-color: #FFFFFF;
+}
+/* .fixed_header thead th:first-child{
+    position: sticky;
+    left: 0;
+    z-index: 2;
+} */
+/* .fixed_header tr td:first-child {
+   position: sticky;
+   left: 0;
+   z-index: 2;
+} */
+
+
+
+/* scrollbar */
+
+tbody::-webkit-scrollbar {
+    width: 6px;
+}
+
+tbody::-webkit-scrollbar-track {
+    background: #FFF;
+}
+
+tbody::-webkit-scrollbar-thumb {
+    background-color: #637381;
+    opacity: 0.48;
+    border-radius: 12px;
+    border: 0;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
